@@ -1,5 +1,5 @@
-import { FieldValues, ResolverResult, ResolverOptions } from "react-hook-form";
-import { z } from "zod";
+import { FieldValues, ResolverResult, ResolverOptions } from 'react-hook-form';
+import { z } from 'zod';
 
 export type Resolver = <T extends z.ZodType<any, any>>(
   schema: T,
@@ -8,7 +8,7 @@ export type Resolver = <T extends z.ZodType<any, any>>(
     /**
      * @default async
      */
-    mode?: "async" | "sync";
+    mode?: 'async' | 'sync';
     /**
      * Return the raw input values rather than the parsed values.
      * @default false
